@@ -67,8 +67,14 @@
     left: 0;
     padding: 5px;
     background: black;
-    opacity: 0.6;
+    opacity: 0.8;
     color: white;
+}
+
+.webcam:last-child {
+    border: solid lightgreen;
+    border-bottom: 5px solid lightgreen;
+    border-right: 5px solid lightgreen;
 }
 
 /* left and right icon */
