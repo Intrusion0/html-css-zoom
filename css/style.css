@@ -5,14 +5,36 @@
 }
 
 /* Corpo centrale */
+
+.speaker_view, .zoom {
+    padding: 10px 15px;
+    background-color: #393939;
+    border-radius: 10%;
+}
+
+.speaker_view, .zoom {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 60px;
+}
+
+.zoom {
+    right: 10px;
+}
+
+.speaker_view a, .zoom a {
+    text-decoration: none;
+    color: white;
+}
+
 #container-flex {
     display: flex;
     height: calc(100vh - 80px);
     justify-content: space-around;
     align-items: center;
-
-    /* debug */
     background-color: #010101;
+    position: relative;
 }
 
 #container-webcam {
@@ -26,15 +48,26 @@
 }
 
 .webcam {
+    position: relative;
     height: 140px;
     width: 330px;
-    margin: 3px;
+    margin: 4px;
 }
 
 .webcam img {
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
+}
+
+.webcam span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background: black;
+    opacity: 0.6;
+    color: white;
 }
 
 /* left and right icon */
@@ -74,9 +107,7 @@
 
 #mic_web {
     display: flex;
-    /* debug */
-    background-color: green;
-    height: 70px;
+    justify-content: space-around;
     width: 15%;
 }
 
@@ -91,15 +122,18 @@
 #end_meeting {
     display: flex;
     /* debug */
-    background-color: firebrick;
+    background-color: #4a4b4c;
     height: 70px;
     width: 15%;
 }
 
+#mic_web i, #tools_zoom i, #end_meeting i {
+    color: white;
+    font-size: 30px;
+}
+
 #mic_web div, #tools_zoom div, #end_meeting div {
-    /* debug */
-    background-color: hotpink;
-    height: 70px;
-    width: 50px;
-    margin: 0 20px;
+    color: white;
+    font-size: 15px;
+    mar
 }
