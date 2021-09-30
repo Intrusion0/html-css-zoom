@@ -8,11 +8,11 @@
 #container-flex {
     display: flex;
     height: calc(100vh - 80px);
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     /* debug */
-    background-color: black;
+    background-color: #010101;
 }
 
 #container-webcam {
@@ -21,33 +21,45 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    background-color:  blueviolet;
     height: calc(100vh - 80px);
     width: 90%;
 }
 
 .webcam {
-    /* debug */
-    background-color: red;
     height: 140px;
     width: 330px;
     margin: 3px;
 }
 
-#left-bottom, #right-bottom {
+.webcam img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+/* left and right icon */
+
+#left-icon, #right-icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* debug */
-    background-color: blue;
-    height: 50px;
 }
 
-#left-bottom span, #right-bottom span {
-    /* debug */
-    background-color: white;
-    height: 20px;
-    width: 50px;
+#left-icon span, #right-icon span {
+    color: white;
+    font-weight: 600;
+}
+
+.fa-caret-right {
+    color: #2ebaff;
+    font-size: 55px;
+    margin-left: 4px;
+}
+
+.fa-caret-left {
+    color: #7f7f7f;
+    font-size: 55px;
+    margin-right: 4px;
 }
 
 /* Footer */
