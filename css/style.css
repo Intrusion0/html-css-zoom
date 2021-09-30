@@ -30,7 +30,7 @@
 
 #container-flex {
     display: flex;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     justify-content: space-around;
     align-items: center;
     background-color: #010101;
@@ -43,8 +43,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     width: 90%;
+    overflow: auto;
 }
 
 .webcam {
@@ -100,8 +101,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    /* debug */
+    height: 70px;
     background-color: #212324;
 }
 
@@ -113,18 +113,24 @@
 
 #tools_zoom {
     display: flex;
-    /* debug */
-    background-color: yellow;
-    height: 70px;
+    justify-content: space-around;
     width: 60%;
 }
 
-#end_meeting {
+.fa-share-square:before {
+    content: "\f14d";
+    color: lime;
+}
+
+#end_meeting div {
     display: flex;
-    /* debug */
     background-color: #4a4b4c;
-    height: 70px;
-    width: 15%;
+    padding: 25px 15px;
+    color: tomato;
+}
+
+#end_meeting a {
+    text-decoration: none;
 }
 
 #mic_web i, #tools_zoom i, #end_meeting i {
@@ -132,8 +138,13 @@
     font-size: 30px;
 }
 
-#mic_web div, #tools_zoom div, #end_meeting div {
+#mic_web div, #tools_zoom div {
     color: white;
     font-size: 15px;
-    mar
+    
+}
+
+.fa-angle-up:before {
+    content: "\f106";
+    font-size: 15px;
 }
