@@ -3,3 +3,91 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Corpo centrale */
+#container-flex {
+    display: flex;
+    height: calc(100vh - 80px);
+    justify-content: space-between;
+    align-items: center;
+
+    /* debug */
+    background-color: black;
+}
+
+#container-webcam {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color:  blueviolet;
+    height: calc(100vh - 80px);
+    width: 90%;
+}
+
+.webcam {
+    /* debug */
+    background-color: red;
+    height: 140px;
+    width: 330px;
+    margin: 3px;
+}
+
+#left-bottom, #right-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* debug */
+    background-color: blue;
+    height: 50px;
+}
+
+#left-bottom span, #right-bottom span {
+    /* debug */
+    background-color: white;
+    height: 20px;
+    width: 50px;
+}
+
+/* Footer */
+#footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    /* debug */
+    background-color: #212324;
+}
+
+#mic_web {
+    display: flex;
+    /* debug */
+    background-color: green;
+    height: 70px;
+    width: 15%;
+}
+
+#tools_zoom {
+    display: flex;
+    /* debug */
+    background-color: yellow;
+    height: 70px;
+    width: 60%;
+}
+
+#end_meeting {
+    display: flex;
+    /* debug */
+    background-color: firebrick;
+    height: 70px;
+    width: 15%;
+}
+
+#mic_web div, #tools_zoom div, #end_meeting div {
+    /* debug */
+    background-color: hotpink;
+    height: 70px;
+    width: 50px;
+    margin: 0 20px;
+}
