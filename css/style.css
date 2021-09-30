@@ -6,33 +6,30 @@
 
 /* Corpo centrale */
 
-.speaker_view, .zoom {
+.top-right-content div {
     padding: 10px 15px;
     background-color: #393939;
     border-radius: 10%;
 }
 
-.speaker_view, .zoom {
-    display: inline-block;
+.top-right-content {
     position: absolute;
     top: 10px;
     right: 60px;
+    color: white;
 }
 
-.zoom {
+.top-right-content.zoom {
     right: 10px;
 }
 
-.speaker_view a, .zoom a {
-    text-decoration: none;
+.top-right-content a {
     color: white;
 }
 
 #container-flex {
     display: flex;
-    height: calc(100vh - 70px);
     justify-content: space-around;
-    align-items: center;
     background-color: #010101;
     position: relative;
 }
@@ -107,7 +104,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
     background-color: #212324;
 }
 
@@ -120,7 +116,7 @@
 #tools_zoom {
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 55%;
 }
 
 .fa-share-square:before {
@@ -129,9 +125,8 @@
 }
 
 #end_meeting div {
-    display: flex;
     background-color: #4a4b4c;
-    padding: 25px 15px;
+    padding: 26px 15px;
     color: tomato;
 }
 
@@ -147,10 +142,11 @@
 #mic_web div, #tools_zoom div {
     color: white;
     font-size: 15px;
-    
+    text-align: center;
 }
 
 .fa-angle-up:before {
     content: "\f106";
-    font-size: 15px;
+    font-size: 20px;
+    margin-left: -30px;
 }
